@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>User Form</title>
+</head>
+<body>
+    <h1>Submit Your Details</h1>
+    <div class="mb-3">
+    <form action="{{ url_for('submit') }}" method="POST">
+        <label class="form-label" for="name">Name:</label><br>
+        <input type="text" class="form-control" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="phone">Phone:</label><br>
+        <input type="text" id="phone" name="phone" required><br><br>
+        
+        <label for="address">Address:</label><br>
+        <input type="text" id="address" name="address"><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+</body>
+</html>
