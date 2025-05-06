@@ -4,7 +4,7 @@ from pymongo import MongoClient
 app = Flask(__name__)
 
 # Connect to MongoDB (Replace this with your MongoDB URI)
-client = MongoClient('mongodb+srv://raj:12345@test.eol4j.mongodb.net/?retryWrites=true&w=majority&appName=Test')
+client = MongoClient('mongodb+srv://raj:12345@test.z47ihmf.mongodb.net/?retryWrites=true&w=majority&appName=Test')
 
 # Create or connect to a database and collection
 db = client['user_database']
